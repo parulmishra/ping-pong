@@ -1,0 +1,26 @@
+/
+h1
+{
+  text-align:center;
+  text-decoration-color:#F08080;
+}
+.upperpart
+{
+    	width:600px;
+    	height:100px;
+    	background-color: #F08080;
+}
+.lowerpart
+{
+    	width:600px;
+    	height:500px;
+    	background: linear-gradient(to right, #B0C4DE 30%, #FAFAD2 70%);
+}
+.lowerleft
+{
+  
+}
+.lowerright
+{
+
+}
