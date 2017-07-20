@@ -1,7 +1,6 @@
-/
 h1
 {
-  text-align:center;
+  text-align: center;
   text-decoration-color:#F08080;
 }
 .upperpart
@@ -18,9 +17,13 @@ h1
 }
 .lowerleft
 {
-  
+  text-align: justify;
+  margin-left: 10px;
 }
 .lowerright
 {
+  text-indent: inherit;
+  text-align: justify;
+
 
 }
