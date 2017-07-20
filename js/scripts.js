@@ -1,14 +1,32 @@
 $(document).ready(function () {
 
   $("#pingpong").click(function(){
-  var numberEntered = $("input#number").val();
-  console.log(numberEntered);
+    var numberEntered = parseInt($("input#number").val());
+    if(numberEntered === 0)
+    {
+      $("#show-numbers").html("Enter a positive number");
+    }
+    console.log(numberEntered);
 
-  for(var i=1; i<= numberEntered; i++)
-  {
-    var temp=i;
-    console.log(temp);
-    $("#show-numbers").append(temp);
+    for(var i=1; i<= numberEntered; i++)
+    {
+      if(i%3 === 0)
+      {
+        $("#show-numbers").append(" "+ "ping");
+      }
+      else if(i%5 === 0)
+      {
+        $("#show-numbers").append(" " + "pong");
+      }
+      else if((i%3 === 0) && (i%5 === 0))
+      {
+        $("#show-numbers").append(" " + "pingpong");
+      }
+      else
+      {
+        $("#show-numbers").append(" " +i);
+      }
+
   }
 });
 });
